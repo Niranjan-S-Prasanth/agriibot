@@ -5,6 +5,13 @@ venv/
 env/
 ENV/
 
+# Environment files
+.env
+.env.local
+.env.*.local
+!.env.example
+
+
 # Python cache
 __pycache__/
 *.py[cod]
@@ -23,3 +30,28 @@ logs/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Build directories
+build/
+dist/
+bin/
+obj/
+out/
+target/
+
+# Compiled C/C++ files
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.la
+*.lai
+*.dylib
+*.elf
+*.bin
+*.map
+*.hex
+
+# ESP-IDF specific
+sdkconfig.old
